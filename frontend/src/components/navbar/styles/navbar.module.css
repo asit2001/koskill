@@ -1,0 +1,24 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    padding: 10px 20px;
+    gap: 30px;
+}
+.logo{
+    color: var(--color-light-gray);
+}
+.logout{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-light-gray);
+}
+.search{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid var(--color-dark-black);
+}
