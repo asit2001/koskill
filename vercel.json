@@ -14,11 +14,6 @@
         "dest": "backend/src/index.ts"
       },
       {
-        "src": "/upload/(.*)",
-        "headers": { "cache-control": "s-maxage=0" },
-        "dest": "backend/src/index.ts"
-      },
-      {
         "src": "/static/(.*)",
         "headers": { "cache-control": "s-maxage=31536000, immutable" },
         "dest": "frontend/static/$1"
