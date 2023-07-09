@@ -38,11 +38,12 @@ const crmSlice = createSlice({
       state.showForm = action.payload;
     },
     search(state, action: PayloadAction<string>) {
+      const text = action.payload.toLowerCase()
       state.value = state.fetchData.filter(
         ({ name, city, email }) =>
-          name.includes(action.payload) ||
-          email.includes(action.payload) ||
-          city.includes(action.payload)
+          name.toLowerCase().includes(text) ||
+          email.toLowerCase().includes(text) ||
+          city.toLowerCase().includes(text)
       );
     },
   },
